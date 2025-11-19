@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGILOWEN - Solutions Numériques Innovantes</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-slate-900 text-white antialiased">
+    
+    <!-- Navigation -->
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section with 3D Logo -->
+    <section id="accueil" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 opacity-20"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-slate-900 to-slate-900 opacity-90"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center">
+                <!-- 3D Logo Container -->
+                <div class="logo-3d-container mb-12 flex justify-center">
+                    <div class="logo-3d relative">
+                        <div class="logo-face front flex items-center justify-center">
+                            <span class="logo-text">DIGILOWEN</span>
+                        </div>
+                        <div class="logo-face back flex items-center justify-center">
+                            <span class="logo-text">DIGILOWEN</span>
+                        </div>
+                        <div class="logo-face left flex items-center justify-center">
+                            <span class="logo-text">DIGILOWEN</span>
+                        </div>
+                        <div class="logo-face right flex items-center justify-center">
+                            <span class="logo-text">DIGILOWEN</span>
+                        </div>
+                        <div class="logo-face top flex items-center justify-center">
+                            <span class="logo-text">DIGILOWEN</span>
+                        </div>
+                        <div class="logo-face bottom flex items-center justify-center">
+                            <span class="logo-text">DIGILOWEN</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    DIGILOWEN YOUR BEST DREAM START HERE
+                </h1>
+                <p class="text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto">
+                    Transformons vos idées en solutions numériques percutantes. Sites web, applications mobiles et stratégies digitales sur-mesure.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#services" class="btn-primary px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 inline-flex items-center gap-2">
+                        <i data-feather="zap"></i> Découvrir nos services
+                    </a>
+                    <a href="#contact" class="btn-secondary px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 inline-flex items-center gap-2">
+                        <i data-feather="message-circle"></i> Nous contacter
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i data-feather="chevron-down" class="w-8 h-8 text-slate-400"></i>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-slate-800/50 backdrop-blur-sm">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                Nos Services
+            </h2>
+            <p class="text-center text-slate-400 mb-16 max-w-2xl mx-auto">
+                Des solutions complètes pour propulser votre présence numérique
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="service-card group bg-slate-800 rounded-2xl p-8 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-feather="monitor" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Développement Web</h3>
+                    <p class="text-slate-400 mb-6">Sites vitrines, e-commerce, applications web progressives. Des solutions modernes et performantes.</p>
+                    <ul class="space-y-2 text-slate-300">
+                        <li class="flex items-center gap-2"><i data-feather="check" class="w-4 h-4 text-green-400"></i> WordPress & CMS</li>
+                        <li class="flex items-center gap-2"><i data-feather="check" class="w-4 h-4 text-green-400"></i> React & Vue.js</li>
+                        <li class="flex items-center gap-2"><i data-feather="check" class="w-4 h-4 text-green-400"></i> E-commerce</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card group bg-slate-800 rounded-2xl p-8 border border-slate-700 hover:border-purple-500 transition-all duration-300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-feather="smartphone" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Applications Mobiles</h3>
+                    <p class="text-slate-400 mb-6">Apps iOS et Android natives ou cross-platform pour toucher tous vos utilisateurs.</p>
+                    <ul class="space-y-2 text-slate-300">
+                        <li class="flex items-center gap-2"><i data-feather="check" class="w-4 h-4 text-green-400"></i> React Native</li>
+                        <li class="flex items-center gap-2"><i data-feather="check" class="w-4 h-4 text-green-400"></i> Flutter</li>
+                        <li class="flex items-center gap-2"><i data-feather="check" class="w-4 h-4 text-green-400"></i> PWA</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card group bg-slate-800 rounded-2xl p-8 border border-slate-700 hover:border-pink-500 transition-all duration-300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-pink-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-feather="layout" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">UI/UX Design</h3>
+                    <p class="text-slate-400 mb-6">Design d'interfaces modernes et intuitives qui captivent vos utilisateurs.</p>
+                    <ul class="space-y-2 text-slate-300">
+                        <li class="flex items-center gap-2"><i data-feather="check" class="w-4 h-4 text-green-400"></i> Design System</li>
+                        <li class="flex items-center gap-2"><i data-feather="check" class="w-4 h-4 text-green-400"></i> Prototypage</li>
+                        <li class="flex items-center gap-2"><i data-feather="check" class="w-4 h-4 text-green-400"></i> User Research</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="service-card group bg-slate-800 rounded-2xl p-8 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-feather="search" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">SEO & Marketing</h3>
+                    <p class="text-slate-400 mb-6">Optimisation pour les moteurs de recherche et stratégies de croissance digitale.</p>
+                    <ul class="space-y-2 text-slate-300">
+                        <li class="flex items-center gap-2"><i data-feather="check" class="w-4 h-4 text-green-400"></i> SEO Technique</li>
+                        <li class="flex items-center gap-2"><i data-feather="check" class="w-4 h-4 text-green-400"></i> SEA & Ads</li>
+                        <li class="flex items-center gap-2"><i data-feather="check" class="w-4 h-4 text-green-400"></i> Analytics</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="service-card group bg-slate-800 rounded-2xl p-8 border border-slate-700 hover:border-purple-500 transition-all duration-300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-feather="cloud" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Cloud & DevOps</h3>
+                    <p class="text-slate-400 mb-6">Infrastructure scalable, déploiement continu et solutions cloud optimisées.</p>
+                    <ul class="space-y-2 text-slate-300">
+                        <li class="flex items-center gap-2"><i data-feather="check" class="w-4 h-4 text-green-400"></i> AWS & Azure</li>
+                        <li class="flex items-center gap-2"><i data-feather="check" class="w-4 h-4 text-green-400"></i> Docker & K8s</li>
+                        <li class="flex items-center gap-2"><i data-feather="check" class="w-4 h-4 text-green-400"></i> CI/CD</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="service-card group bg-slate-800 rounded-2xl p-8 border border-slate-700 hover:border-pink-500 transition-all duration-300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-pink-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-feather="shield" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Cybersécurité</h3>
+                    <p class="text-slate-400 mb-6">Protection de vos données et sécurisation de vos applications.</p>
+                    <ul class="space-y-2 text-slate-300">
+                        <li class="flex items-center gap-2"><i data-feather="check" class="w-4 h-4 text-green-400"></i> Audit de sécurité</li>
+                        <li class="flex items-center gap-2"><i data-feather="check" class="w-4 h-4 text-green-400"></i> SSL & HTTPS</li>
+                        <li class="flex items-center gap-2"><i data-feather="check" class="w-4 h-4 text-green-400"></i> RGPD</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                Nos Réalisations
+            </h2>
+            <p class="text-center text-slate-400 mb-16 max-w-2xl mx-auto">
+                Découvrez nos projets les plus récents
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card group relative overflow-hidden rounded-2xl bg-slate-800 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                    <img src="http://static.photos/technology/640x360/42" alt="Projet E-commerce" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <h3 class="text-2xl font-bold mb-2">Plateforme E-commerce</h3>
+                        <p class="text-slate-300 mb-4">Solution complète de vente en ligne avec paiement sécurisé</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">React</span>
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card group relative overflow-hidden rounded-2xl bg-slate-800 border border-slate-700 hover:border-purple-500 transition-all duration-300">
+                    <img src="http://static.photos/office/640x360/133" alt="App Mobile" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <h3 class="text-2xl font-bold mb-2">App Mobile B2B</h3>
+                        <p class="text-slate-300 mb-4">Application de gestion pour entreprise avec synchronisation cloud</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-sm">React Native</span>
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card group relative overflow-hidden rounded-2xl bg-slate-800 border border-slate-700 hover:border-pink-500 transition-all duration-300">
+                    <img src="http://static.photos/people/640x360/99" alt="Dashboard Analytics" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <h3 class="text-2xl font-bold mb-2">Dashboard Analytics</h3>
+                        <p class="text-slate-300 mb-4">Visualisation de données en temps réel pour la prise de décision</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-yellow-500/20 text-yellow-400 rounded-full text-sm">Vue.js</span>
+                            <span class="px-3 py-1 bg-red-500/20 text-red-400 rounded-full text-sm">D3.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-800/50 backdrop-blur-sm">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                        Pourquoi DIGILOWEN ?
+                    </h2>
+                    <p class="text-slate-300 mb-6 text-lg">
+                        Nous sommes une équipe de passionnés du digital, spécialisés dans la création de solutions sur-mesure qui propulsent votre entreprise vers de nouveaux sommets.
+                    </p>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center">
+                                <i data-feather="check-circle" class="w-6 h-6 text-green-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Solutions sur-mesure</h4>
+                                <p class="text-slate-400">Adaptées à vos besoins spécifiques</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center">
+                                <i data-feather="check-circle" class="w-6 h-6 text-green-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Technologies de pointe</h4>
+                                <p class="text-slate-400">Stack moderne et performante</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center">
+                                <i data-feather="check-circle" class="w-6 h-6 text-green-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Accompagnement complet</h4>
+                                <p class="text-slate-400">De l'idée au déploiement</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn-primary px-8 py-4 rounded-full font-semibold text-lg inline-flex items-center gap-2">
+                        <i data-feather="users"></i> Rejoignez-nous
+                    </a>
+                </div>
+                <div class="relative">
+                    <img src="http://static.photos/workspace/640x360/77" alt="Notre équipe" class="rounded-2xl shadow-2xl">
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl opacity-30 blur-xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                Contactez-nous
+            </h2>
+            <p class="text-center text-slate-400 mb-16 max-w-2xl mx-auto">
+                Prêt à démarrer votre projet ? Discutons-en ensemble
+            </p>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <!-- Contact Form -->
+                <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700">
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Nom complet</label>
+                            <input type="text" required class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors" placeholder="Francis Manyoundou">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Email</label>
+                            <input type="email" required class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors" placeholder="Francis Manyoundou@exemple.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Sujet</label>
+                            <select class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors">
+                                <option>Développement Web</option>
+                                <option>Application Mobile</option>
+                                <option>UI/UX Design</option>
+                                <option>SEO & Marketing</option>
+                                <option>Autre</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Message</label>
+                            <textarea rows="5" required class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors resize-none" placeholder="Décrivez votre projet..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full btn-primary py-4 rounded-lg font-semibold text-lg inline-flex items-center justify-center gap-2">
+                            <i data-feather="send"></i> Envoyer le message
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700">
+                        <h3 class="text-2xl font-bold mb-6">Informations</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i data-feather="map-pin" class="w-6 h-6 text-blue-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Adresse</h4>
+                                    <p class="text-slate-400">123 Avenue Digitale<br>00000 Pointe-Noire, CONGO</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-purple-500/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i data-feather="phone" class="w-6 h-6 text-purple-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Téléphone</h4>
+                                    <p class="text-slate-400">+242 06 895 43 46/ +242 05 650 13 69</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-pink-500/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i data-feather="mail" class="w-6 h-6 text-pink-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Email</h4>
+                                    <p class="text-slate-400">manyoundou@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700">
+                        <h3 class="text-2xl font-bold mb-6">Horaires</h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between">
+                                <span class="text-slate-300">Lundi - Vendredi</span>
+                                <span class="text-slate-400">9h00 - 19h00</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-slate-300">Samedi</span>
+                                <span class="text-slate-400">10h00 - 16h00</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-slate-300">Dimanche</span>
+                                <span class="text-slate-400">Fermé</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <custom-footer></custom-footer>
+
+    <!-- Scripts -->
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
